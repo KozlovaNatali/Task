@@ -5,6 +5,7 @@
 // 782 -> 72
 // 918 -> 98
 
+
 int RemoveSecondDigit(int num) 
 {
     int firstdigit = num / 100;
@@ -18,3 +19,4 @@ int removeSecondDigit = RemoveSecondDigit(number);
 Console.WriteLine($"Случайное число из отрезка 100 - 999 -> {number}");
 
 Console.WriteLine($"После удаления второй цифры, получим число -> {removeSecondDigit}");
+
