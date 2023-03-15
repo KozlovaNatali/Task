@@ -21,16 +21,15 @@ else
     Console.WriteLine("Вы ввели не пятизначное число");
 }
 
-bool Palindrome(int num1)
+bool Palindrome(int num)
 {
     int ReversePalindrome = 0;
-    int t = 0;
-    int num = num1;
+    int temp = 0;
     while (num > 0)
     {
-        t = num % 10;
-        ReversePalindrome = ReversePalindrome * 10 + t;
+        temp = num % 10;
+        ReversePalindrome = ReversePalindrome * 10 + temp;
         num = num / 10;
     }
-    return num1 == ReversePalindrome;
+    return number == ReversePalindrome;
 }
