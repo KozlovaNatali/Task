@@ -8,7 +8,9 @@ Console.Write("Введите кол-во строк: ");
 int rows = Convert.ToInt32(Console.ReadLine());
 Console.Write("Введите кол - во столбцов: ");
 int columns = Convert.ToInt32(Console.ReadLine());
-int depth = 2;
+Console.Write("Введите кол - во столбцов: ");
+int depth = Convert.ToInt32(Console.ReadLine());
+
 int min = 10;
 int max = 100;
 if(rows * columns * depth < max)
@@ -19,7 +21,7 @@ Console.WriteLine();
 }
 else
 {
-    Console.WriteLine("213");
+    Console.WriteLine("Размер массива выходит за пределы двузначных чисел");
 }
 
 int[,,] CreateMatrixRndInt(int rows, int columns, int depth, int min, int max)
